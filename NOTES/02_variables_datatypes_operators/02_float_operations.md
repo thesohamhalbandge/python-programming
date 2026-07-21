@@ -1,3 +1,5 @@
+<a id="floating-point-numbers-in-python"></a>
+
 ## Floating-Point Numbers in Python
 
 A **float**, short for **floating-point number**, represents numbers that may contain a decimal point.
@@ -12,9 +14,61 @@ Floats are commonly used for:
 
 > Floats are not ideal for calculations that require exact decimal precision, such as financial accounting. For those cases, Python’s `decimal` module is usually more appropriate.
 
+<a id="index"></a>
+
+## Index
+
+1. [Declaring Floats](#declaring-floats)
+
+   * [Direct Assignment](#direct-assignment)
+   * [Using the `float()` Function](#using-float-function)
+   * [Verifying the Float Type](#verifying-float-type)
+2. [Float Addition and Subtraction](#float-addition-and-subtraction)
+
+   * [Mixing Integers and Floats](#mixing-integers-and-floats)
+3. [Float Multiplication](#float-multiplication)
+
+   * [Result Type](#multiplication-result-type)
+   * [Precision Considerations](#multiplication-precision)
+4. [Float Division](#float-division)
+
+   * [Dividing Two Integers](#dividing-two-integers)
+   * [Division with a Decimal Result](#division-with-decimal-result)
+   * [Float Division Compared with Floor Division](#float-versus-floor-division)
+5. [Floating-Point Precision](#floating-point-precision)
+
+   * [Floating-Point Inaccuracy](#floating-point-inaccuracy)
+6. [Rounding Floats](#rounding-floats)
+
+   * [Using the `round()` Function](#using-round-function)
+   * [Rounding to the Nearest Integer](#rounding-nearest-integer)
+   * [Rounding to Decimal Places](#rounding-decimal-places)
+   * [Rounding Halfway Values](#rounding-halfway-values)
+7. [Formatting Floats for Display](#formatting-floats-for-display)
+
+   * [Displaying Fixed Decimal Places](#displaying-fixed-decimal-places)
+   * [Formatting Inside `print()`](#formatting-inside-print)
+   * [Formatting Versus Rounding](#formatting-versus-rounding)
+8. [Handling Float Precision](#handling-float-precision)
+
+   * [Using `round()`](#precision-using-round)
+   * [Formatting for Display](#precision-formatting)
+   * [Using `Decimal`](#using-decimal)
+9. [Scientific Notation](#scientific-notation)
+
+   * [Declaring Scientific-Notation Floats](#declaring-scientific-notation)
+   * [Performing Arithmetic Operations](#scientific-notation-operations)
+   * [Rounding Scientific-Notation Values](#rounding-scientific-notation)
+   * [Formatting Scientific Notation](#formatting-scientific-notation)
+   * [Using Uppercase Scientific Notation](#uppercase-scientific-notation)
+
 ---
 
+<a id="declaring-floats"></a>
+
 ## Declaring Floats
+
+<a id="direct-assignment"></a>
 
 ### 1. Direct Assignment
 
@@ -25,6 +79,12 @@ pi_value = 3.14
 temperature = -12.5
 zero_float = 0.0
 ```
+
+[Back to Index](#index)
+
+---
+
+<a id="using-float-function"></a>
 
 ### 2. Using the `float()` Function
 
@@ -47,6 +107,12 @@ print(converted_string)
 
 > Writing `10` creates an integer, while writing `10.0` creates a float.
 
+[Back to Index](#index)
+
+---
+
+<a id="verifying-float-type"></a>
+
 ### 3. Verifying the Float Type
 
 Use the `type()` function to confirm that a value is a float.
@@ -63,7 +129,11 @@ print(type(price))
 <class 'float'>
 ```
 
+[Back to Index](#index)
+
 ---
+
+<a id="float-addition-and-subtraction"></a>
 
 ## Float Addition and Subtraction
 
@@ -89,6 +159,8 @@ print(subtraction_result)
 
 The subtraction result may contain additional decimal digits because floating-point values are stored using binary representation.
 
+<a id="mixing-integers-and-floats"></a>
+
 ### Mixing Integers and Floats
 
 Python automatically converts an integer to a float when both types are used in the same arithmetic expression.
@@ -110,7 +182,11 @@ print(type(result))
 <class 'float'>
 ```
 
+[Back to Index](#index)
+
 ---
+
+<a id="float-multiplication"></a>
 
 ## Float Multiplication
 
@@ -131,6 +207,8 @@ print(result)
 10.0
 ```
 
+<a id="multiplication-result-type"></a>
+
 ### Result Type
 
 Multiplying two floats produces a float, even when the result represents a whole number.
@@ -149,6 +227,8 @@ print(type(result))
 <class 'float'>
 ```
 
+<a id="multiplication-precision"></a>
+
 ### Precision Considerations
 
 Some multiplication operations may produce small rounding differences.
@@ -165,11 +245,17 @@ print(result)
 3.3000000000000003
 ```
 
+[Back to Index](#index)
+
 ---
+
+<a id="float-division"></a>
 
 ## Float Division
 
 The division operator (`/`) performs standard division and always returns a float.
+
+<a id="dividing-two-integers"></a>
 
 ### Dividing Two Integers
 
@@ -187,6 +273,8 @@ print(result)
 
 Even though both operands are integers, the `/` operator returns a float.
 
+<a id="division-with-decimal-result"></a>
+
 ### Division with a Decimal Result
 
 ```python
@@ -200,6 +288,8 @@ print(result)
 ```text
 2.5
 ```
+
+<a id="float-versus-floor-division"></a>
 
 ### Float Division Compared with Floor Division
 
@@ -218,11 +308,17 @@ print(5 // 2)
 * `/` performs standard division.
 * `//` performs floor division and rounds the result down.
 
+[Back to Index](#index)
+
 ---
+
+<a id="floating-point-precision"></a>
 
 ## Floating-Point Precision
 
 Python floats are stored using binary floating-point representation. Many decimal fractions cannot be represented exactly in binary.
+
+<a id="floating-point-inaccuracy"></a>
 
 ### Example of Floating-Point Inaccuracy
 
@@ -240,11 +336,17 @@ print(result)
 
 Although the expected mathematical result is `0.3`, the stored floating-point approximation contains a very small difference.
 
+[Back to Index](#index)
+
 ---
+
+<a id="rounding-floats"></a>
 
 ## Rounding Floats
 
 Rounding is useful when a result should contain a limited number of decimal places.
+
+<a id="using-round-function"></a>
 
 ### Using the `round()` Function
 
@@ -257,6 +359,8 @@ round(number, ndigits)
 * `number` is the value to round.
 * `ndigits` is the number of decimal places to retain.
 * `ndigits` is optional.
+
+<a id="rounding-nearest-integer"></a>
 
 ### 1. Rounding to the Nearest Integer
 
@@ -276,6 +380,8 @@ print(result)
 
 When `ndigits` is omitted, `round()` returns the nearest integer.
 
+<a id="rounding-decimal-places"></a>
+
 ### 2. Rounding to Decimal Places
 
 ```python
@@ -291,6 +397,8 @@ print(result)
 ```text
 4.57
 ```
+
+<a id="rounding-halfway-values"></a>
 
 ### 3. Rounding Halfway Values
 
@@ -312,11 +420,17 @@ In each case, Python rounds to the nearest even integer.
 
 > Because many decimal values are not represented exactly as floats, some rounding results may appear unexpected.
 
+[Back to Index](#index)
+
 ---
+
+<a id="formatting-floats-for-display"></a>
 
 ## Formatting Floats for Display
 
 Formatting controls how a float appears without necessarily changing the original value.
+
+<a id="displaying-fixed-decimal-places"></a>
 
 ### Displaying a Fixed Number of Decimal Places
 
@@ -336,6 +450,8 @@ print(formatted_pi)
 
 The `.2f` format specifier displays the value using two digits after the decimal point.
 
+<a id="formatting-inside-print"></a>
+
 ### Formatting Directly Inside `print()`
 
 ```python
@@ -349,6 +465,8 @@ print(f"{price:.2f}")
 ```text
 19.46
 ```
+
+<a id="formatting-versus-rounding"></a>
 
 ### Formatting Versus Rounding
 
@@ -377,9 +495,15 @@ print(type(formatted_value))
 * `round()` returns a numerical value.
 * An f-string with `.2f` returns a formatted string.
 
+[Back to Index](#index)
+
 ---
 
+<a id="handling-float-precision"></a>
+
 ## Handling Float Precision
+
+<a id="precision-using-round"></a>
 
 ### 1. Using `round()`
 
@@ -398,6 +522,8 @@ print(rounded_value)
 0.3
 ```
 
+<a id="precision-formatting"></a>
+
 ### 2. Formatting for Display
 
 Use formatting when only the displayed output needs to be limited.
@@ -415,6 +541,8 @@ print(f"{value:.2f}")
 ```
 
 The original value remains unchanged.
+
+<a id="using-decimal"></a>
 
 ### 3. Using `Decimal` for Exact Decimal Arithmetic
 
@@ -436,7 +564,11 @@ print(result)
 
 Strings are passed to `Decimal` so the decimal values are preserved exactly.
 
+[Back to Index](#index)
+
 ---
+
+<a id="scientific-notation"></a>
 
 ## Scientific Notation
 
@@ -449,6 +581,8 @@ For example:
 ```
 
 Python uses the letter `e` or `E` to represent powers of ten.
+
+<a id="declaring-scientific-notation"></a>
 
 ### 1. Declaring Floats with Scientific Notation
 
@@ -476,6 +610,8 @@ The expressions mean:
 
 Values written using scientific notation are floats.
 
+<a id="scientific-notation-operations"></a>
+
 ### 2. Performing Arithmetic Operations
 
 ```python
@@ -496,6 +632,8 @@ The expression is equivalent to:
 3200.0
 ```
 
+<a id="rounding-scientific-notation"></a>
+
 ### 3. Rounding Scientific-Notation Values
 
 ```python
@@ -512,6 +650,8 @@ print(rounded_number)
 234.567
 234.57
 ```
+
+<a id="formatting-scientific-notation"></a>
 
 ### 4. Formatting Output in Scientific Notation
 
@@ -536,6 +676,8 @@ The `.3e` format specifier means:
 * Display the value in scientific notation.
 * Show three digits after the decimal point.
 
+<a id="uppercase-scientific-notation"></a>
+
 ### 5. Using Uppercase Scientific Notation
 
 Use `E` instead of `e` to display an uppercase exponent indicator.
@@ -551,3 +693,5 @@ print(f"{value:.2E}")
 ```text
 1.23E+05
 ```
+
+[Back to Index](#index)
