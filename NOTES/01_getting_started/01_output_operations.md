@@ -1,5 +1,26 @@
 ## Basic `print()` Function
 
+## Index
+
+1. [Printing Text](#1-printing-text)
+2. [Printing Numbers](#2-printing-numbers)
+3. [Printing Multiple Items](#3-printing-multiple-items)
+4. [Printing with a Separator](#4-printing-with-a-separator)
+5. [Printing with the `end` Parameter](#5-printing-with-the-end-parameter)
+
+   * [Printing on the Same Line](#printing-on-the-same-line)
+   * [Using Custom Endings](#using-custom-endings)
+6. [Using Escape Sequences](#6-using-escape-sequences)
+
+   * [Common Escape Sequences](#common-escape-sequences)
+7. [Printing Empty Lines](#7-printing-empty-lines)
+8. [Formatting Printed Output](#8-formatting-printed-output)
+
+   * [F-Strings](#81-f-strings)
+   * [The `format()` Method](#82-the-format-method)
+
+---
+
 ### 1. Printing Text
 
 ```python
@@ -7,12 +28,20 @@ print("Hello, World!")  # Using double quotes
 print('Welcome to Python!')  # Using single quotes
 ```
 
+[Back to Index](#index)
+
+---
+
 ### 2. Printing Numbers
 
 ```python
 print(123)  # Prints a whole number
 print(3.14)  # Prints a decimal number
 ```
+
+[Back to Index](#index)
+
+---
 
 ### 3. Printing Multiple Items
 
@@ -27,6 +56,10 @@ Hello world 2026
 ```
 
 By default, Python inserts a space between each item.
+
+[Back to Index](#index)
+
+---
 
 ### 4. Printing with a Separator
 
@@ -49,6 +82,10 @@ print("apple", "banana", "cherry", sep=", ")
 ```text
 apple, banana, cherry
 ```
+
+[Back to Index](#index)
+
+---
 
 ### 5. Printing with the `end` Parameter
 
@@ -81,6 +118,10 @@ print("Item 3")
 Item 1, Item 2, Item 3
 ```
 
+[Back to Index](#index)
+
+---
+
 ### 6. Using Escape Sequences
 
 Escape sequences represent special characters inside strings.
@@ -105,6 +146,10 @@ He said, "Hello!"
 | `\n`            | Inserts a newline               |
 | `\t`            | Inserts a horizontal tab        |
 
+[Back to Index](#index)
+
+---
+
 ### 7. Printing Empty Lines
 
 ```python
@@ -121,6 +166,10 @@ print("\n")  # Prints two newline characters in total
 ```
 
 > `print()` is the preferred way to print a blank line.
+
+[Back to Index](#index)
+
+---
 
 ### 8. Formatting Printed Output
 
@@ -152,3 +201,5 @@ print("I have {} apples and {} oranges.".format(2, 3))
 ```text
 I have 2 apples and 3 oranges.
 ```
+
+[Back to Index](#index)
