@@ -1,0 +1,46 @@
+Python Fundamentals:
+---------------------
+1. Comments --- # --- ctrl + /
+2. Keywords or reserved words
+3. Identifiers
+
+Rules to declare identifiers:
+-----------------------------
+1. lowercase and uppercase
+2. case-sensitive
+3. it allows digits (0-9)
+4. it should not start with a digit
+5. it allows underscore (_)
+6. It should not be two or more parts
+7. if an identifier start with underscore then it is private
+8. no keyword or reserved words can be used as identifier
+
+4. Variables
+
+* variable is a named memory location
+* while declaring a variable in python we need not to specify any datatype as it a dynamically typed programming language
+* every value has its variable
+
+5. Multiple assignment
+
+* it is the process of assigning a single value to multiple variable
+* it is the process of assigning multiple value to multiple variables
+
+6. Indentation --- 4 spaces
+
+in other programming languages
+
+int i = 100;
+if (i == 10) {
+    printf("true");
+} else {
+    printf("false");
+}
+
+in python
+
+i = 100
+if (i == 10):
+    print("true")
+else:
+    print("false")
