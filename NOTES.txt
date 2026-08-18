@@ -44,3 +44,21 @@ if (i == 10):
     print("true")
 else:
     print("false")
+
+Datatypes:
+----------
+1. None type --- None 
+2. Numeric type --- int, float, complex
+3. Boolean type --- bool [True(1), False(0)]
+4. Sequence type --- str, list, tuple, range
+5. Set type --- set, frozenset
+6. Mapping type --- dict 
+7. Binary type --- bytes, bytearray
+
+type casting or datatype conversion:
+------------------------------------
+converting from one datatype to another datatype.
+
+input(): it is used to accept input values from the user
+
+Note: by default in python whatever the values comes from user at runtime are treated as str 
