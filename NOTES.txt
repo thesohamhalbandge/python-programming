@@ -62,3 +62,37 @@ converting from one datatype to another datatype.
 input(): it is used to accept input values from the user
 
 Note: by default in python whatever the values comes from user at runtime are treated as str 
+
+working with str:
+-----------------
+1. str is a group of characters or sequence of characters 
+2. we can create a str by using '' or "" or ''' ''' or """ """
+3. str is immutable that means once we create a str that cannot be modified directly
+
+*mutable: we can change or modify
+*immutable: we cannot change or modify
+
+working with list:
+------------------
+1. list is ordered collection of elements 
+2. we can create list by using []
+3. it allows duplicate elements 
+4. it allows different datatypes elements 
+5. list is mutable, we can modify directly
+
+working with tuple:
+------------------
+1. list is ordered collection of elements 
+2. we can create list by using ()
+3. it allows duplicate elements 
+4. it allows different datatypes elements 
+5. tuple is immutable, we cannot modify tuple 
+6. to create a tuple with single element then after the element we should provide a comma sign (,)
+7. tuple is more efficient as compared to list
+
+working with range:
+-------------------
+1. range is used to generate sequence of values 
+2. we can create a range by using range() function 
+3. by default range will start from 0
+4. range is immutable we cannot modify it 
