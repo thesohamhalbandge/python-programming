@@ -95,4 +95,24 @@ working with range:
 1. range is used to generate sequence of values 
 2. we can create a range by using range() function 
 3. by default range will start from 0
-4. range is immutable we cannot modify it 
+4. range is immutable we cannot modify it  
+
+working with set:
+-----------------
+1. set is unordered collection of unique elements 
+2. we can create a set by using {}
+3. to create an empty set we use set() function 
+4. it allows the different datatype elements 
+5. it will not allow duplicate element 
+6. set is mutable, we can modify a set 
+
+frozen set is immutable where as set is mutable 
+
+working with dict: 
+------------------
+1. dict is collection of items 
+2. in dict, each item can be a pair i.e. key:value 
+3. we can create a dict by using {}
+4. in dict keys must be unique and keys are immutable 
+5. in dict values are mutable and values need not to be unique 
+6. in dict, keys and values can be of any datatype (key rule should satisfy)
