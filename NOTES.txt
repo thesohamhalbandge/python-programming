@@ -116,3 +116,70 @@ working with dict:
 4. in dict keys must be unique and keys are immutable 
 5. in dict values are mutable and values need not to be unique 
 6. in dict, keys and values can be of any datatype (key rule should satisfy)
+
+Operators:
+----------
+1. Arithmetic
+
++ --- Addition
+- --- Subtraction 
+* --- Multiplication 
+/ --- Division 
+% --- Modulus
+** --- Power 
+// --- Floor Divide 
+
+2. Relational 
+
+< --- Less than 
+> --- Greater than 
+<= --- Less than or equal to 
+>= --- Greater than or equal to 
+== --- Equal to 
+!= --- Not equal to
+
+3. Assignment 
+
+= --- Assign 
++= --- Add and assign 
+-= --- Subtract and assign 
+*= --- Multiply and assign 
+/= --- Division and assign 
+%= --- Modulus and assign 
+// --- Floor division and assign 
+
+4. Logical 
+
+and : it returns True if both conditions are True 
+or : it returns True if any one of the condition is True or both the conditions are True else False
+not : it returns True if condition is False 
+      it returns False if the condition is True 
+
+5. Membership
+
+* Membership Operators are used to check whether the element or value is present in given sequence or not 
+
+in: returns True if the element or value is present in the given sequence else False 
+not in: returns True if the element or value not present in given sequence else False 
+
+6. Identity
+
+* Used to check whether variables are having same identity or not 
+
+is: returns True if the variables are having same identity else False  
+is not: return True if the variables are not having same identity else False 
+
+id(): it is a built-in function
+      it is used to get the memory address of the variable 
+      it will return a unique integer
+
+7. Bitwise
+
+* Used to peform bit by bit operations on integers for faster calculations 
+
+1. Bitwise AND (&)
+2. Bitwise OR (|)
+3. Bitwise XOR (^) # --- if both bits are same then False else True 
+4. Bitwise NOT (~) # --- ~n = - (n + 1)
+5. Bitwise Left Shift (<<)
+6. Bitwise Right Shift (<<)
