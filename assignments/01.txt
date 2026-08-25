@@ -1,0 +1,2 @@
+1. write a program to print the sum of first n numbers using for loop 
+2. write a program to print given number mathematical table
