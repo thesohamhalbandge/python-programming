@@ -183,3 +183,21 @@ id(): it is a built-in function
 4. Bitwise NOT (~) # --- ~n = - (n + 1)
 5. Bitwise Left Shift (<<)
 6. Bitwise Right Shift (<<)
+
+Conditional Flow Statements:
+----------------------------
+
+1. Conditional Statements
+    * if 
+    * if else 
+    * nested if 
+    * elif 
+
+2. Iterative Statements
+    * for : is used to iterate elements of collection what the order they appear
+    * while 
+
+3. Transfer Statements
+    * break : is used to stop iteration based on the condition 
+    * continue : it is used to skip the current iteration and it will continue with next iteration 
+    * pass 
