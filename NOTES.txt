@@ -195,9 +195,21 @@ Conditional Flow Statements:
 
 2. Iterative Statements
     * for : is used to iterate elements of collection what the order they appear
-    * while 
+    
+    * nested for loop: loop which is inside another loop
+
+        NOTE: for every single iteration of outer loop, inner loop should finish its all the iterations then only the outer loop will start with its next iteration  
+        
+    * while : is used to execute the number of statements as long as the condition is True.
+              Once the condition becomes False then control flow will jump out of the while loop. 
 
 3. Transfer Statements
     * break : is used to stop iteration based on the condition 
     * continue : it is used to skip the current iteration and it will continue with next iteration 
-    * pass 
+    * pass : is a keyword and used to make an empty block 
+
+working with str:
+-----------------
+1. str is group of characters or sequence of characters
+2. we can create a str by using '' or "" or ''' ''' or """ """ 
+3. 
