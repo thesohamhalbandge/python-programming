@@ -1,0 +1,8 @@
+1. write a program to print even index and odd index position characters from given string by using 
+- slice
+- for loop
+- while loop
+
+2. write a program to print lower case and upper case characters separately and also print lower case count and upper case count separately
+
+3. write a program to print unique characters from given string
