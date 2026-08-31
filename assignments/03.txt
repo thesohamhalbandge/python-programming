@@ -1,0 +1,6 @@
+1. write a program to print each word in reverse order from given string 
+eg. my name is mohan 
+output: ym eman si nahom 
+
+2. write a program to print vowels from given string 
+eg. hyderabad
