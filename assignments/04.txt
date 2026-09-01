@@ -1,0 +1,10 @@
+01. creating list from user input values
+
+02. creating list using range function
+
+03. write a program to print unique elements from list 
+e.g. [10, 20, 10, 30, 10, 30, 20, 20, 40, 20, 40, 20, 40, 20]
+
+04. write a program to print the second highest value from the list 
+
+05. write a program to print the element which is more than length of a list
