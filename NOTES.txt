@@ -213,3 +213,10 @@ working with str:
 1. str is group of characters or sequence of characters
 2. we can create a str by using '' or "" or ''' ''' or """ """ 
 
+working with list:
+------------------
+1. list is ordered collection of elements 
+2. we can create list by using [] 
+3. it allows different datatype elements 
+4. it allows duplicate elements
+5. list is mutable, we can modify or change
