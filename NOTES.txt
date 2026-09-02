@@ -220,3 +220,21 @@ working with list:
 3. it allows different datatype elements 
 4. it allows duplicate elements
 5. list is mutable, we can modify or change
+
+working with tuple:
+-------------------
+1. tuple is ordered collection of elements 
+2. we can create a tuple by using ()
+3. to create a tuple with single element then after the element we should provide comma (,)
+4. it allows different datatype elements 
+5. it allows duplicate elements 
+6. tuple is immutable, we cannot modify or change
+
+working with set:
+-----------------
+1. set is unordered collection of unique elements 
+2. we can create a set by using {} 
+3. it will not allow duplicate elements 
+4. it will allow different datatype elements 
+5. set is mutable, we can modify a set 
+6. to create an empty set then we use set() function 
