@@ -1,0 +1,7 @@
+01. write a program to create a dict using two list s
+keys = [1, 2, 3]
+values = ["sai", "mohan", "durga"]
+
+02. write a program for merging two dictionaries 
+d1 = {"a":10, "b":20}
+d2 = {"c":30, "d":40}
