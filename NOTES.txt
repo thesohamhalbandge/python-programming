@@ -238,3 +238,12 @@ working with set:
 4. it will allow different datatype elements 
 5. set is mutable, we can modify a set 
 6. to create an empty set then we use set() function 
+
+working with dict: 
+------------------
+1. it is a collection of items 
+2. each item is a pair (key: value)
+3. we can create a dict by using {} 
+4. in dict, keys must be unique and keys are immutable
+5. in dict, values are mutable and values are need to be unique
+6. in dict, keys and values can be of any datatype
